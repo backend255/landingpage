@@ -1,0 +1,123 @@
+*{
+    font-family: 'Ubuntu';
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+header .container .logo{
+    display: flex;
+    align-items: center;
+}
+
+header .container .menu{
+    display: flex;
+    align-items: center;
+} 
+
+header .container .menu ul,
+header .container .menu li{
+    display: flex;
+    list-style: none;
+}
+
+header .container .menu nav ul li a{
+    text-decoration: none;
+    padding: 15px;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+header .container .menu nav ul li a:hover,
+header .container .menu nav ul .active{
+    border-bottom: 3px solid #ffbb00;
+}
+
+#banner_principal{
+    background-image: url('../img/Banner1.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border: 1px solid #000;
+}
+
+#titulo_comparativo, #especificacoes{
+    display: flex;
+    justify-content: center;
+}
+
+#titulo_comparativo .text_titulo h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 5px;
+    border-bottom: 2px solid #000000;
+    color: #000000;
+}
+
+#especificacoes .text_especificacoes{
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 28px;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+footer{
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background-color: #1E1E1E;
+    height: 50px;
+}
+
+footer .footer_text{
+    padding: 15px;
+}
+
+.menu_mobile{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    #banner_principal{
+        background-image: url('../img/BannerMovel.jpg');
+        background-size: auto;
+        background-position: center;
+        height: 500px;
+        border: 1px solid #000;
+    }
+
+    header .container .menu{
+        display: none;
+    } 
+
+    .menu_mobile{
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        border: 2px solid #000;
+        margin-top: 35px;
+        margin-bottom: 35px;
+        margin-right: 10px;
+    }
+}
